@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock Test</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container my-5">
+        <div id="test-selection-view">
+            <h1 class="text-center mb-5 display-5 fw-bold text-light">Select a Test</h1>
+            <div id="test-list-container">
+                </div>
+        </div>
+
+        <div id="test-view" class="d-none">
+            <div class="test-container-card">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h2 id="test-title" class="text-light"></h2>
+                    <div id="timer" class="fs-4 fw-bold badge bg-danger p-2"></div>
+                </div>
+                <div class="progress mb-4" style="height: 10px;">
+                    <div id="progress-bar" class="progress-bar" role="progressbar" style="width: 0%;"></div>
+                </div>
+
+                <div id="question-container">
+                    <h4 id="question-text" class="mb-4" style="min-height: 50px;"></h4>
+                    <div id="options-container" class="list-group"></div>
+                </div>
+            </div>
+            
+            <div class="mt-4 d-flex justify-content-between">
+                <button id="prev-btn" class="btn btn-secondary">Previous</button>
+                <button id="next-btn" class="btn btn-primary px-4">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="test.js"></script>
+</body>
+</html>
