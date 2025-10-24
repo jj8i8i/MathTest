@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Results</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container my-5">
+        <div class="text-center mb-4">
+            <h1 class="display-5 fw-bold text-light">Test Results</h1>
+        </div>
+
+        <div class="card result-card mb-4">
+            <div class="card-body text-center p-4">
+                <h2 class="text-light">Your Score</h2>
+                <p id="score-text" class="display-4 fw-bold text-light"></p>
+                <p id="score-percentage" class="fs-4 text-gray"></p>
+            </div>
+        </div>
+
+        <h3 class="mb-3 text-light">Answer Review</h3>
+        <div id="review-container">
+            </div>
+
+        <div class="text-center mt-4">
+            <a href="test.html" class="btn btn-primary btn-lg">Back to Test Selection</a>
+        </div>
+    </div>
+    <script src="questions.js"></script>
+    <script src="results.js"></script>
+</body>
+</html>
